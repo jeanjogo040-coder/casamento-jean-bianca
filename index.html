@@ -1,5 +1,201 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jean & Bianca</title><style>
-*{box-sizing:border-box}body{margin:0;background:#fff;color:#111;font-family:Arial,sans-serif;overflow:hidden}.opening{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center}.arrow{font-size:64px;color:#4169e1;margin-bottom:45px;animation:b 1.5s infinite}.env{width:280px;height:185px;border:3px solid #111;position:relative;background:#fff;cursor:pointer;overflow:hidden}.env:before,.env:after{content:"";position:absolute;width:3px;height:310px;background:#111;top:-62px}.env:before{left:50%;transform:rotate(58deg)}.env:after{right:50%;transform:rotate(-58deg)}.flap{position:absolute;z-index:2;inset:0;background:#fff;clip-path:polygon(0 0,50% 52%,100% 0);border-bottom:3px solid #111;transform-origin:top;transition:.65s}.txt{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:17px;z-index:3}.env.open .flap{transform:rotateX(180deg)}.letter{position:fixed;inset:0;background:#fff;display:flex;align-items:center;justify-content:center;padding:25px;opacity:0;pointer-events:none;transition:.5s}.letter.show{opacity:1;pointer-events:auto}.paper{text-align:center;max-width:500px;padding:35px}.paper h1{font:38px Georgia,serif;margin:0 0 20px}.paper .date{margin-bottom:28px}.paper p{font:19px Georgia,serif;line-height:1.7;margin-bottom:30px}.btn{display:inline-block;background:#4169e1;color:white;text-decoration:none;padding:14px 24px;border-radius:3px}@keyframes b{50%{transform:translateY(8px)}} </style></head><body>
-<div class="opening"><div class="arrow">↓</div><div class="env" id="e"><div class="flap"></div><div class="txt">Press to open</div></div></div>
-<div class="letter" id="l"><div class="paper"><h1>Jean & Bianca</h1><div class="date">14/11/2026</div><p>Onde quer que você esteja,<br>é onde eu quero estar.</p><a class="btn" href="https://jeanjogo040-coder.github.io/casamento-jean-bianca/">Abrir nosso site 💙</a></div></div>
-<script>e.onclick=()=>{e.classList.add('open');setTimeout(()=>l.classList.add('show'),650)}</script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jean & Bianca</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: white;
+  color: #111;
+  overflow: hidden;
+}
+
+.abertura {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.seta {
+  color: #4169e1;
+  font-size: 65px;
+  line-height: 1;
+  margin-bottom: 45px;
+  animation: subirDescer 1.5s infinite;
+}
+
+.envelope {
+  width: 280px;
+  height: 185px;
+  position: relative;
+  border: 3px solid #111;
+  background: white;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 330px;
+  background: #111;
+  left: 50%;
+  top: -72px;
+  transform: rotate(57deg);
+}
+
+.envelope::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 330px;
+  background: #111;
+  right: 50%;
+  top: -72px;
+  transform: rotate(-57deg);
+}
+
+.texto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  z-index: 5;
+}
+
+.carta {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(.95);
+  transition: .6s;
+}
+
+.carta.aberta {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.conteudo {
+  max-width: 500px;
+}
+
+.conteudo h1 {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.data {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.mensagem {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.botao {
+  display: inline-block;
+  background: #4169e1;
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+@keyframes subirDescer {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="abertura" id="abertura">
+
+  <div class="seta">↓</div>
+
+  <div class="envelope" onclick="abrirCarta()">
+    <div class="texto">
+      Press to open
+    </div>
+  </div>
+
+</div>
+
+<div class="carta" id="carta">
+
+  <div class="conteudo">
+
+    <h1>Jean & Bianca</h1>
+
+    <div class="data">
+      14/11/2026
+    </div>
+
+    <div class="mensagem">
+      Onde quer que você esteja,<br>
+      é onde eu quero estar.
+    </div>
+
+    <a
+      class="botao"
+      href="https://jeanjogo040-coder.github.io/casamento-jean-bianca/"
+    >
+      Abrir nosso site 💙
+    </a>
+
+  </div>
+
+</div>
+
+<script>
+function abrirCarta() {
+
+  document.getElementById("carta").classList.add("aberta");
+
+}
+</script>
+
+</body>
+</html>y
