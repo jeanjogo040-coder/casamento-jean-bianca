@@ -89,12 +89,12 @@ section{padding:45px 4vw}.wrap{max-width:1060px;margin:auto}.cards{display:grid;
 
 <script>
 const presentes={
- jantar:{nome:'Jantar romântico',valor:250},
+ jantar:{nome:'Jantar romântico',valor:300},
  passeio:{nome:'Passeio da lua de mel',valor:500},
  maquina:{nome:'Máquina de lavar',valor:700},
- passagens:{nome:'Passagens da lua de mel',valor:2500},
- lar:{nome:'Nosso novo lar',valor:600},
- escolha:{nome:'Presente à sua escolha',valor:150}
+ passagens:{nome:'Passagens da lua de mel',valor:700},
+ lar:{nome:'Nosso novo lar',valor:1500},
+ escolha:{nome:'Presente à sua escolha',valor:200}
 };
 function dinheiro(v){return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
 document.querySelectorAll('[data-price]').forEach(e=>e.textContent=dinheiro(presentes[e.dataset.price].valor));
