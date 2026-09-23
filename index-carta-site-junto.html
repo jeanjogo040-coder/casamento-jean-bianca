@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jean & Bianca</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;min-height:100%;background:#fff}
+body{font-family:Georgia,"Times New Roman",serif;color:#1769e0;overflow-x:hidden}
+#carta{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px 20px;transition:opacity .7s ease,transform .7s ease}
+.carta-inner{width:min(620px,100%)}
+.envelope{width:220px;height:145px;border:2px solid #1769e0;margin:0 auto 35px;position:relative;background:#fff}
+.envelope:before,.envelope:after{content:"";position:absolute;top:0;width:50%;height:2px;background:#1769e0}
+.envelope:before{left:0;transform:rotate(33deg);transform-origin:left top}
+.envelope:after{right:0;transform:rotate(-33deg);transform-origin:right top}
+.carta h1{font-size:48px;font-weight:400;margin:0 0 12px}
+.date{font:18px Arial,sans-serif;letter-spacing:4px;margin-bottom:25px}
+.phrase{font-size:20px;font-style:italic;line-height:1.5;margin:0 auto 30px}
+.btn{display:inline-block;border:0;border-radius:28px;background:#1769e0;color:#fff;padding:14px 25px;font:bold 16px Georgia,serif;text-decoration:none;cursor:pointer}
+#site{position:fixed;inset:0;background:#fff;opacity:0;visibility:hidden;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease,visibility 0s linear .7s;z-index:10}
+#site.aberto{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .7s ease,transform .7s ease}
+#site iframe{width:100%;height:100%;border:0;display:block;background:#fff}
+body.aberto{overflow:hidden}
+@media(max-width:520px){.carta h1{font-size:40px}.envelope{width:190px;height:125px}.phrase{font-size:18px}}
+</style>
+</head>
+<body>
+<section id="carta">
+  <div class="carta-inner">
+    <div class="envelope" aria-hidden="true"></div>
+    <h1>Jean &amp; Bianca</h1>
+    <div class="date">14 · 11 · 2026</div>
+    <p class="phrase">“Onde quer que você esteja, é onde eu quero estar.”</p>
+    <button class="btn" onclick="abrirSite()">Abrir nosso site 💙</button>
+  </div>
+</section>
+
+<div id="site" aria-hidden="true">
+  <iframe src="site.html" title="Site de casamento Jean e Bianca"></iframe>
+</div>
+
+<script>
+function abrirSite(){
+  document.getElementById('carta').style.opacity='0';
+  document.getElementById('carta').style.transform='translateY(-25px)';
+  document.getElementById('site').classList.add('aberto');
+  document.getElementById('site').setAttribute('aria-hidden','false');
+  document.body.classList.add('aberto');
+}
+</script>
+</body>
+</html>
