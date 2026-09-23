@@ -1,149 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Jean & Bianca</title>
 
 <style>
-* {
-  box-sizing: border-box;
+*{box-sizing:border-box}
+
+html,body{
+  margin:0;
+  width:100%;
+  min-height:100%;
+  background:#fff
 }
 
-html, body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  font-family: Arial, sans-serif;
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  color:#1769e0;
+  overflow-x:hidden
 }
 
-body {
-  background: white;
-  color: #111;
-  overflow: hidden;
+#carta{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:30px 20px;
+  transition:opacity .7s ease,transform .7s ease
 }
 
-.abertura {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.carta-inner{
+  width:min(620px,100%)
 }
 
-.seta {
-  color: #4169e1;
-  font-size: 65px;
-  line-height: 1;
-  margin-bottom: 45px;
-  animation: subirDescer 1.5s infinite;
+.envelope{
+  width:220px;
+  height:145px;
+  border:2px solid #1769e0;
+  margin:0 auto 35px;
+  position:relative;
+  background:#fff
 }
 
-.envelope {
-  width: 280px;
-  height: 185px;
-  position: relative;
-  border: 3px solid #111;
-  background: white;
-  cursor: pointer;
-  overflow: hidden;
+.envelope:before,
+.envelope:after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:50%;
+  height:2px;
+  background:#1769e0
 }
 
-.envelope::before {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 330px;
-  background: #111;
-  left: 50%;
-  top: -72px;
-  transform: rotate(57deg);
+.envelope:before{
+  left:0;
+  transform:rotate(33deg);
+  transform-origin:left top
 }
 
-.envelope::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 330px;
-  background: #111;
-  right: 50%;
-  top: -72px;
-  transform: rotate(-57deg);
+.envelope:after{
+  right:0;
+  transform:rotate(-33deg);
+  transform-origin:right top
 }
 
-.texto {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 17px;
-  z-index: 5;
+.carta h1{
+  font-size:48px;
+  font-weight:400;
+  margin:0 0 12px
 }
 
-.carta {
-  position: fixed;
-  inset: 0;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 25px;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(.95);
-  transition: .6s;
+.date{
+  font:18px Arial,sans-serif;
+  letter-spacing:4px;
+  margin-bottom:25px
 }
 
-.carta.aberta {
-  opacity: 1;
-  pointer-events: auto;
-  transform: scale(1);
+.phrase{
+  font-size:20px;
+  font-style:italic;
+  line-height:1.5;
+  margin:0 auto 30px
 }
 
-.conteudo {
-  max-width: 500px;
+.btn{
+  display:inline-block;
+  border:0;
+  border-radius:28px;
+  background:#1769e0;
+  color:#fff;
+  padding:14px 25px;
+  font:bold 16px Georgia,serif;
+  text-decoration:none;
+  cursor:pointer
 }
 
-.conteudo h1 {
-  font-family: Georgia, serif;
-  font-size: 40px;
-  margin-bottom: 15px;
+#site{
+  position:fixed;
+  inset:0;
+  background:#fff;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(30px);
+  transition:
+    opacity .7s ease,
+    transform .7s ease,
+    visibility 0s linear .7s;
+  z-index:10
 }
 
-.data {
-  font-size: 18px;
-  margin-bottom: 30px;
+#site.aberto{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+  transition:
+    opacity .7s ease,
+    transform .7s ease
 }
 
-.mensagem {
-  font-family: Georgia, serif;
-  font-size: 20px;
-  line-height: 1.7;
-  margin-bottom: 35px;
+#site iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+  background:#fff
 }
 
-.botao {
-  display: inline-block;
-  background: #4169e1;
-  color: white;
-  text-decoration: none;
-  padding: 14px 25px;
-  border-radius: 4px;
-  font-size: 16px;
+body.aberto{
+  overflow:hidden
 }
 
-@keyframes subirDescer {
-  0%, 100% {
-    transform: translateY(0);
+@media(max-width:520px){
+  .carta h1{
+    font-size:40px
   }
 
-  50% {
-    transform: translateY(8px);
+  .envelope{
+    width:190px;
+    height:125px
+  }
+
+  .phrase{
+    font-size:18px
   }
 }
 </style>
@@ -151,48 +151,56 @@ body {
 
 <body>
 
-<div class="abertura" id="abertura">
+<section id="carta">
 
-  <div class="seta">↓</div>
+  <div class="carta-inner">
 
-  <div class="envelope" onclick="abrirCarta()">
-    <div class="texto">
-      Press to open
+    <div class="envelope" aria-hidden="true"></div>
+
+    <h1>Jean &amp; Bianca</h1>
+
+    <div class="date">
+      14 · 11 · 2026
     </div>
+
+    <p class="phrase">
+      “Onde quer que você esteja, é onde eu quero estar.”
+    </p>
+
+    <button class="btn" onclick="abrirSite()">
+      Abrir nosso site 💙
+    </button>
+
   </div>
 
-</div>
+</section>
 
-<div class="carta" id="carta">
+<div id="site" aria-hidden="true">
 
-  <div class="conteudo">
-
-    <h1>Jean & Bianca</h1>
-
-    <div class="data">
-      14/11/2026
-    </div>
-
-    <div class="mensagem">
-      Onde quer que você esteja,<br>
-      é onde eu quero estar.
-    </div>
-
-    <a
-      <a href="site.html" class="btn">Abrir nosso site 💙</a>
-    </a>
-
-  </div>
+  <iframe
+    src="site.html"
+    title="Site de casamento Jean e Bianca">
+  </iframe>
 
 </div>
 
 <script>
-function abrirCarta() {
 
-  document.getElementById("carta").classList.add("aberta");
+function abrirSite(){
+
+  document.getElementById('carta').style.opacity='0';
+
+  document.getElementById('carta').style.transform='translateY(-25px)';
+
+  document.getElementById('site').classList.add('aberto');
+
+  document.getElementById('site').setAttribute('aria-hidden','false');
+
+  document.body.classList.add('aberto');
 
 }
+
 </script>
 
 </body>
-</html>y
+</html>
