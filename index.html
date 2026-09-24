@@ -1,206 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jean & Bianca</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Jean & Bianca • Nosso Casamento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#061a2b;--navy2:#09263d;--paper:#f6f3ec;--gold:#c6a66b;--text:#102638;--line:#dce2e6;--serif:"Cormorant Garamond",Georgia,serif;--script:"Great Vibes",cursive;--sans:"Montserrat",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--sans);color:var(--text);background:var(--navy)}a{text-decoration:none;color:inherit}button,input,textarea{font:inherit}
+/* CARTA DE ABERTURA — azul, no mesmo estilo do conceito aprovado */
+.letter-intro{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:radial-gradient(circle at 50% 28%,#123c5c 0,#071d30 42%,#020b13 100%);transition:opacity .8s,visibility .8s}.letter-intro.hidden{opacity:0;visibility:hidden;pointer-events:none}.letter-scene{width:min(90vw,560px);text-align:center}.envelope{position:relative;width:min(430px,88vw);height:285px;margin:auto;filter:drop-shadow(0 25px 35px #0008)}.envelope-back,.envelope-front{position:absolute;inset:0;border:1px solid #5d7890;border-radius:8px;background:linear-gradient(135deg,#0b2c48,#061a2b)}.envelope-front{z-index:5;clip-path:polygon(0 36%,50% 68%,100% 36%,100% 100%,0 100%)}.envelope-flap{position:absolute;z-index:6;top:0;left:0;width:100%;height:62%;background:#0d3554;clip-path:polygon(0 0,100% 0,50% 82%);transform-origin:top;transition:transform 1s cubic-bezier(.2,.8,.2,1);border-top:1px solid #64819a}.envelope.open .envelope-flap{transform:rotateX(180deg);z-index:2}.letter-paper{position:absolute;z-index:3;left:7%;right:7%;top:14%;height:82%;background:var(--paper);padding:28px 25px;border-radius:4px;color:var(--text);transform:translateY(35px);transition:transform 1s .25s cubic-bezier(.2,.8,.2,1)}.envelope.open .letter-paper{transform:translateY(-60px)}.letter-decoration{color:var(--gold);font-size:25px}.eyebrow{font-size:11px;letter-spacing:.25em;text-transform:uppercase}.letter-paper h1{font:42px var(--script);font-weight:400;margin:4px 0}.letter-paper p{font:18px var(--serif);line-height:1.35}.seal{position:absolute;z-index:8;left:50%;bottom:42%;transform:translate(-50%,50%);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#08243a;border:2px solid #b4c9d8;color:#fff;font:15px var(--serif);box-shadow:0 5px 15px #0005;transition:opacity .5s}.envelope.open .seal{opacity:0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 25px;font-weight:600;transition:.25s;cursor:pointer}.btn:hover{transform:translateY(-2px)}.btn-light{background:#fff;color:var(--navy)}.btn-dark{background:var(--navy);color:#fff}.tap-hint{color:#b8cbd8;margin-top:45px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+/* SITE */
+.hero{min-height:100vh;position:relative;background:linear-gradient(180deg,#03111d55 0%,#03111d45 40%,#03111de8 100%),url("fotos/casal.jpg") center/cover;display:grid;place-items:center;text-align:center;color:#fff;padding:30px;overflow:hidden}.hero:before{content:"";position:absolute;inset:7%;border:1px solid rgba(255,255,255,.22);border-radius:28px;pointer-events:none}.hero:after{content:"♡";position:absolute;left:50%;bottom:25px;transform:translateX(-50%);font:28px var(--serif);color:#d8e7f0;opacity:.75}.nav{position:absolute;z-index:3;top:0;left:0;right:0;padding:22px 5vw;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(#03111d80,transparent)}.brand{font:30px var(--script)}.nav-links{display:flex;gap:24px;font-size:12px}.nav-links a:hover{color:#cbdde8}.menu{display:none;background:none;border:0;color:#fff;font-size:25px}.hero-content{position:relative;z-index:2;padding-top:60px;max-width:900px}.hero .script{ text-shadow:0 8px 30px #0008}.hero .quote{max-width:500px;margin-left:auto;margin-right:auto}.hero .date{display:inline-block;padding:9px 18px;border-top:1px solid #ffffff55;border-bottom:1px solid #ffffff55}.hero .eyebrow{color:#d8e7f0}.script{font:clamp(72px,12vw,130px) var(--script);line-height:.9}.hero-badge{margin:22px auto 8px;display:flex;align-items:center;justify-content:center;gap:12px}.hero-badge img{width:52px;height:52px;object-fit:cover;border-radius:50%;border:2px solid #fff8;box-shadow:0 5px 18px #0006}.hero-badge span{font-size:9px;line-height:1.2;letter-spacing:.18em;text-transform:uppercase;text-align:left;color:#d8e7f0}.date{font-size:13px;letter-spacing:.2em}.quote{font:22px/1.25 var(--serif);margin:28px 0}.count{display:flex;justify-content:center;gap:8px;margin:30px 0}.count div{min-width:75px;border:1px solid #fff5;padding:13px 10px;border-radius:12px;background:#061a2b99;backdrop-filter:blur(8px)}.count b{display:block;font:30px var(--serif)}.count small{font-size:9px;letter-spacing:.08em}.scroll{font-size:11px}
+section{padding:100px 6%}.light{background:var(--paper)}.dark{background:var(--navy);color:#fff}.heading{text-align:center;max-width:700px;margin:0 auto 50px}.heading h2{font:56px var(--script);margin:5px 0}.heading p{line-height:1.7;opacity:.8}.blue{color:#0b3150}
+.story{max-width:900px;margin:auto}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px;margin:15px 0;box-shadow:0 10px 30px #17344a0c}.card h3{font:30px var(--serif);margin:4px 0}.card p{line-height:1.7;color:#61717d}
+.gallery{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:250px;gap:12px}.gallery img{width:100%;height:100%;object-fit:cover;border-radius:16px}.gallery img:first-child,.gallery img:nth-child(4){grid-row:span 2}
+.info{max-width:1000px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:25px}.box{padding:32px;border:1px solid #ffffff22;border-radius:20px;background:#ffffff09}.box h3{font:29px var(--serif);margin-top:0}.btn-dark{margin-top:12px}.footer{text-align:center;padding:75px 20px;background:#041522;color:#fff}.footer-script{font:70px var(--script)}
+@media(max-width:700px){.hero:before{inset:3%;border-radius:20px}.hero-content{padding-top:70px}.hero .script{font-size:74px}.hero-badge{margin-top:18px}.hero-badge img{width:46px;height:46px}.nav{padding:17px 20px}.nav-links{display:none}.menu{display:block}.hero{background-position:center}.count div{min-width:63px;padding:10px 6px}.count b{font-size:23px}section{padding:75px 20px}.heading h2{font-size:48px}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:210px}.gallery img:first-child,.gallery img:nth-child(4){grid-row:auto}.info{grid-template-columns:1fr}.letter-paper{padding:22px 18px}.letter-paper p{font-size:16px}.envelope.open .letter-paper{transform:translateY(-45px)}.footer-script{font-size:60px}}
+</style>
 
 <style>
-*{box-sizing:border-box}
-
-html,body{
-  margin:0;
-  width:100%;
-  min-height:100%;
-  background:#fff
-}
-
-body{
-  font-family:Georgia,"Times New Roman",serif;
-  color:#1769e0;
-  overflow-x:hidden
-}
-
-#carta{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:30px 20px;
-  transition:opacity .7s ease,transform .7s ease
-}
-
-.carta-inner{
-  width:min(620px,100%)
-}
-
-.envelope{
-  width:220px;
-  height:145px;
-  border:2px solid #1769e0;
-  margin:0 auto 35px;
-  position:relative;
-  background:#fff
-}
-
-.envelope:before,
-.envelope:after{
-  content:"";
-  position:absolute;
-  top:0;
-  width:50%;
-  height:2px;
-  background:#1769e0
-}
-
-.envelope:before{
-  left:0;
-  transform:rotate(33deg);
-  transform-origin:left top
-}
-
-.envelope:after{
-  right:0;
-  transform:rotate(-33deg);
-  transform-origin:right top
-}
-
-.carta h1{
-  font-size:48px;
-  font-weight:400;
-  margin:0 0 12px
-}
-
-.date{
-  font:18px Arial,sans-serif;
-  letter-spacing:4px;
-  margin-bottom:25px
-}
-
-.phrase{
-  font-size:20px;
-  font-style:italic;
-  line-height:1.5;
-  margin:0 auto 30px
-}
-
-.btn{
-  display:inline-block;
-  border:0;
-  border-radius:28px;
-  background:#1769e0;
-  color:#fff;
-  padding:14px 25px;
-  font:bold 16px Georgia,serif;
-  text-decoration:none;
-  cursor:pointer
-}
-
-#site{
-  position:fixed;
-  inset:0;
-  background:#fff;
-  opacity:0;
-  visibility:hidden;
-  transform:translateY(30px);
-  transition:
-    opacity .7s ease,
-    transform .7s ease,
-    visibility 0s linear .7s;
-  z-index:10
-}
-
-#site.aberto{
-  opacity:1;
-  visibility:visible;
-  transform:translateY(0);
-  transition:
-    opacity .7s ease,
-    transform .7s ease
-}
-
-#site iframe{
-  width:100%;
-  height:100%;
-  border:0;
-  display:block;
-  background:#fff
-}
-
-body.aberto{
-  overflow:hidden
-}
-
-@media(max-width:520px){
-  .carta h1{
-    font-size:40px
-  }
-
-  .envelope{
-    width:190px;
-    height:125px
-  }
-
-  .phrase{
-    font-size:18px
-  }
-}
+.story-section{position:relative;padding:105px 6vw 120px;background:linear-gradient(180deg,#f7f4ed,#edf3f6);color:#102638;overflow:hidden}
+.story-section:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(transparent,#9db1bf 12%,#9db1bf 88%,transparent)}
+.story-intro{max-width:720px;text-align:center;margin:0 auto 70px;position:relative;z-index:1}.story-kicker{display:inline-block;text-transform:uppercase;letter-spacing:.25em;font:600 11px var(--sans);color:#315b78;margin-bottom:10px}.story-intro h2{font:500 clamp(48px,7vw,76px)/.9 var(--script);margin:0 0 22px;color:#071e31}.story-intro h2 em{font-style:normal;font-family:var(--serif);font-weight:500;font-size:.58em}.story-intro p{max-width:560px;margin:auto;line-height:1.8;color:#61717d;font-size:14px}
+.story-timeline{max-width:1050px;margin:auto;display:flex;flex-direction:column;gap:65px;position:relative;z-index:1}.story-card{width:calc(50% - 38px);background:#fff;border:1px solid #d8e1e6;border-radius:22px;overflow:hidden;box-shadow:0 22px 55px rgba(20,48,68,.11)}.story-left{align-self:flex-start}.story-right{align-self:flex-end}.story-photo{height:280px;overflow:hidden;background:#09263d}.story-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s}.story-card:hover .story-photo img{transform:scale(1.04)}.story-copy{padding:28px 30px 31px}.story-copy span{color:#52728a;text-transform:uppercase;letter-spacing:.18em;font-size:9px;font-weight:700}.story-copy h3{font:600 34px/1 var(--serif);margin:8px 0 12px;color:#0a2539}.story-copy p{margin:0;color:#6b7983;font-size:13px;line-height:1.8}.story-closing{text-align:center;margin-top:85px;position:relative;z-index:1}.story-closing span{font-size:28px;color:#b3945d}.story-closing p{font:32px var(--script);margin:8px 0;color:#173c57}
+@media(max-width:800px){.story-section{padding:75px 20px 90px}.story-section:before{left:18px}.story-intro{margin-bottom:48px}.story-intro h2{font-size:52px}.story-timeline{gap:28px;padding-left:18px}.story-card,.story-left,.story-right{width:100%;align-self:stretch}.story-photo{height:235px}.story-copy{padding:23px}.story-copy h3{font-size:30px}.story-closing{margin-top:55px}}
 </style>
 </head>
-
 <body>
-
-<section id="carta">
-
-  <div class="carta-inner">
-
-    <div class="envelope" aria-hidden="true"></div>
-
-    <h1>Jean &amp; Bianca</h1>
-
-    <div class="date">
-      14 · 11 · 2026
-    </div>
-
-    <p class="phrase">
-      “Onde quer que você esteja, é onde eu quero estar.”
-    </p>
-
-    <button class="btn" onclick="abrirSite()">
-      Abrir nosso site 💙
-    </button>
-
+<div class="letter-intro" id="letterIntro"><div class="letter-scene"><div class="envelope" id="envelope"><div class="envelope-back"></div><div class="envelope-flap"></div><div class="letter-paper"><div class="letter-decoration">♡</div><p class="eyebrow">Uma mensagem especial</p><h1>Jean & Bianca</h1><p>Preparamos este cantinho com muito carinho para compartilhar com você um dos dias mais importantes das nossas vidas.</p><button class="btn btn-light" id="openSite">Entrar no nosso site <span>→</span></button></div><div class="envelope-front"></div><div class="seal">J <span>&</span> B</div></div><p class="tap-hint">Clique na carta para abrir</p></div></div>
+<header class="hero" id="inicio"><nav class="nav"><a class="brand" href="#inicio">Jean & Bianca ♡</a><button class="menu" id="menu">☰</button><div class="nav-links"><a href="#historia">Nossa história</a><a href="#fotos">Fotos</a><a href="#local">Local</a></div></nav><div class="hero-content"><p class="eyebrow">Com amor, convidamos você para</p><div class="script">Jean & Bianca</div><div class="hero-badge"><img src="fotos/aliancas.jpg" alt="Alianças"><span>Nosso<br>grande dia</span></div><p class="date">14 DE NOVEMBRO DE 2026</p><p class="quote">“Onde quer que você esteja,<br>é onde eu quero estar.”</p><div class="count"><div><b id="d">--</b><small>DIAS</small></div><div><b id="h">--</b><small>HORAS</small></div><div><b id="m">--</b><small>MINUTOS</small></div><div><b id="s">--</b><small>SEGUNDOS</small></div></div><a class="scroll" href="#historia">Role para conhecer nossa história ↓</a></div></header>
+<section class="story-section" id="historia">
+  <div class="story-intro">
+    <span class="story-kicker">Nossa história</span>
+    <h2>Tudo começou <em>assim...</em></h2>
+    <p>Uma história que começou na escola, passou por uma conversa de doido sobre astrologia e chegou até o nosso grande dia.</p>
   </div>
-
+  <div class="story-timeline">
+    <article class="story-card story-left">
+      <div class="story-photo"><img src="fotos/inicio.jpg" alt="Jean e Bianca no começo da história"></div>
+      <div class="story-copy"><span>O começo</span><h3>Onde tudo começou</h3><p>A gente se conheceu na escola, em um campeonato que eu estava participando — e, para melhorar a história, eu ainda ganhei o campeonato. 🏆😂 Depois conversamos um pouco mais e ela foi para a praia. Mesmo de longe, continuamos conversando bastante.</p></div>
+    </article>
+    <article class="story-card story-right">
+      <div class="story-photo"><img src="fotos/bianca.jpg" alt="Bianca"></div>
+      <div class="story-copy"><span>Conversas que aproximaram</span><h3>Astrologia e uma conversa de doido</h3><p>Entre uma conversa e outra, começamos a falar sobre astrologia. Foi uma conversa de doido, daquelas que a gente lembra e ri até hoje. 😂✨ Depois eu fui viajar e acabei indo para uma praia um pouco longe da dela.</p></div>
+    </article>
+    <article class="story-card story-left">
+      <div class="story-photo"><img src="fotos/casal.jpg" alt="Jean e Bianca juntos"></div>
+      <div class="story-copy"><span>O primeiro encontro</span><h3>O melhor dia da minha vida</h3><p>Quando voltamos para São Paulo, finalmente conseguimos nos encontrar. Nosso primeiro rolê juntos foi no shopping — e, para mim, foi o melhor dia da minha vida. Eu queria fazer daquele dia algo diferente para ela.</p></div>
+    </article>
+    <article class="story-card story-right">
+      <div class="story-photo"><img src="fotos/beijo.jpg" alt="Momento de carinho do casal"></div>
+      <div class="story-copy"><span>Uma história para rir</span><h3>Os únicos R$50 do Uber 😂</h3><p>O Uber que me levou para o shopping não tinha troco para R$50. Aqueles eram praticamente os únicos R$50 que eu tinha — então gastei tudo para comprar algumas coisinhas para ela: chocolates, Fini e até um milk-shake de Nutella do Bob's. Eu nunca tinha tomado e ele me deu uma dor de barriga... mas eu não contei para ela naquele dia. KKKKKK.</p></div>
+    </article>
+    <article class="story-card story-left">
+      <div class="story-photo"><img src="fotos/beijo2.jpg" alt="Jean e Bianca em um momento romântico"></div>
+      <div class="story-copy"><span>O dia que mudou tudo</span><h3>Conheci os pais dela... e veio o pedido</h3><p>Naquele mesmo dia, conheci os pais dela. E, como se o nosso primeiro encontro já não tivesse sido inesquecível o suficiente, ela me pediu em namoro. Eu aceitei. ❤️ Não esperava que no nosso primeiro encontro a gente já fosse sair de lá com um relacionamento, mas foi simplesmente sensacional.</p></div>
+    </article>
+    <article class="story-card story-right">
+      <div class="story-photo"><img src="fotos/aliancas.jpg" alt="Alianças de Jean e Bianca"></div>
+      <div class="story-copy"><span>O nosso próximo capítulo</span><h3>Eu não mudaria nada</h3><p>Eu não mudaria nada daquele dia. Bom... talvez uma coisa: eu que deveria ter pedido ela em namoro. 😂💍 E o resto é história. Agora, essa história continua em 14 de novembro de 2026, quando vamos celebrar o nosso grande dia ao lado de quem amamos.</p></div>
+    </article>
+  </div>
+  <div class="story-closing"><span>♡</span><p>E o resto é história...</p></div>
 </section>
-
-<div id="site" aria-hidden="true">
-
-  <iframe
-    src="site.html"
-    title="Site de casamento Jean e Bianca">
-  </iframe>
-
-</div>
-
+<section class="dark" id="fotos"><div class="heading"><p class="eyebrow">Nossos momentos</p><h2>Alguns pedacinhos de nós</h2><p>Fotos reais de Jean & Bianca.</p></div><div class="gallery"><img src="fotos/aliancas.jpg" alt="Nossas alianças"><img src="fotos/inicio.jpg" alt="Jean e Bianca"><img src="fotos/bianca.jpg" alt="Bianca"><img src="fotos/beijo.jpg" alt="Momento do casal"><img src="fotos/casal.jpg" alt="Jean e Bianca juntos"><img src="fotos/beijo2.jpg" alt="Momento romântico"><img src="fotos/video.jpg" alt="Uma lembrança do casal"></div></section>
+<section class="light" id="local"><div class="heading"><p class="eyebrow blue">O grande dia</p><h2>Esperamos você</h2><p>Queremos você ao nosso lado para celebrar esse momento.</p></div><div class="info"><div class="box"><h3>📅 14 de novembro de 2026</h3><p>Sábado • Nosso casamento</p></div><div class="box"><h3>📍 Avenida Aparecida do Rio Negro, 446</h3><p>Local da celebração</p><a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Avenida+Aparecida+do+Rio+Negro+446">Como chegar ↗</a></div></div></section>
+<footer class="footer"><div class="footer-script">Jean & Bianca</div><p>14 · 11 · 2026</p><p>Que bom ter você fazendo parte da nossa história. ♡</p></footer>
 <script>
-
-function abrirSite(){
-
-  document.getElementById('carta').style.opacity='0';
-
-  document.getElementById('carta').style.transform='translateY(-25px)';
-
-  document.getElementById('site').classList.add('aberto');
-
-  document.getElementById('site').setAttribute('aria-hidden','false');
-
-  document.body.classList.add('aberto');
-
-}
-
+const intro=document.getElementById('letterIntro'),env=document.getElementById('envelope');function openLetter(e){if(e)e.stopPropagation();env.classList.add('open');setTimeout(()=>intro.classList.add('hidden'),1500)}env.addEventListener('click',openLetter);document.getElementById('openSite').addEventListener('click',openLetter);
+const target=new Date('2026-11-14T16:00:00-03:00');function tick(){let x=Math.max(0,target-new Date());d.textContent=Math.floor(x/864e5);h.textContent=String(Math.floor(x/36e5)%24).padStart(2,'0');m.textContent=String(Math.floor(x/6e4)%60).padStart(2,'0');s.textContent=String(Math.floor(x/1e3)%60).padStart(2,'0')}tick();setInterval(tick,1000);
 </script>
-
-</body>
-</html>
+</body></html>
