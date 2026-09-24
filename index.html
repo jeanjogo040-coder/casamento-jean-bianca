@@ -6,7 +6,8 @@
 <meta name="theme-color" content="#061a2b">
 <meta name="description" content="Site de casamento de Jean & Bianca — 14 de novembro de 2026.">
 <title>Jean & Bianca • Nosso Casamento</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#061a2b;--navy2:#092b45;--blue:#3f86c7;--ice:#dcecf7;--paper:#f7f4ed;--gold:#c6a66b;--text:#102638;--muted:#6b7a85;--line:#d8e1e6;--serif:"Cormorant Garamond",Georgia,serif;--script:"Great Vibes",cursive;--sans:"Montserrat",Arial,sans-serif}
@@ -16,7 +17,7 @@
 /* navegação */
 .nav{position:absolute;z-index:20;top:0;left:0;right:0;padding:20px 5vw;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(#03111db5,transparent)}.brand{font:31px var(--script);color:#fff}.nav-links{display:flex;gap:22px;font-size:11px;color:#fff}.nav-links a{position:relative}.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;background:#9bc9ee;transition:.25s}.nav-links a:hover:after{right:0}.menu{display:none;background:none;border:0;color:#fff;font-size:25px;cursor:pointer}.mobile-nav{position:fixed;z-index:19;top:0;right:0;width:min(86vw,330px);height:100vh;background:#061a2b;transform:translateX(100%);transition:.3s;padding:90px 30px}.mobile-nav.open{transform:none}.mobile-nav a{display:block;padding:17px 0;color:#fff;border-bottom:1px solid #ffffff18}.mobile-close{position:absolute;right:22px;top:22px;color:#fff;background:none;border:0;font-size:26px}
 /* hero */
-.hero{min-height:100vh;position:relative;background:linear-gradient(180deg,#03111d48 0%,#03111d35 35%,#03111de8 100%),url("fotos/casal.jpg") center/cover;display:grid;place-items:center;text-align:center;color:#fff;padding:30px;overflow:hidden}.hero:before{content:"";position:absolute;inset:7%;border:1px solid #ffffff35;border-radius:28px;pointer-events:none}.hero:after{content:"♡";position:absolute;left:50%;bottom:25px;transform:translateX(-50%);font:28px var(--serif);color:#d8e7f0;opacity:.75}.hero-content{position:relative;z-index:2;padding-top:60px;max-width:900px}.hero .script{text-shadow:0 8px 30px #0008}.hero .quote{max-width:500px;margin:28px auto}.hero .date{display:inline-block;padding:9px 18px;border-top:1px solid #ffffff55;border-bottom:1px solid #ffffff55}.script{font:clamp(72px,12vw,130px) var(--script);line-height:.9}.hero-badge{margin:22px auto 8px;display:flex;align-items:center;justify-content:center;gap:12px}.hero-badge img{width:52px;height:52px;object-fit:cover;border-radius:50%;border:2px solid #fff8;box-shadow:0 5px 18px #0006}.hero-badge span{font-size:9px;line-height:1.2;letter-spacing:.18em;text-transform:uppercase;text-align:left;color:#d8e7f0}.date{font-size:13px;letter-spacing:.2em}.quote{font:22px/1.25 var(--serif)}.count{display:flex;justify-content:center;gap:8px;margin:30px 0}.count div{min-width:75px;border:1px solid #fff5;padding:13px 10px;border-radius:12px;background:#061a2b99;backdrop-filter:blur(8px)}.count b{display:block;font:30px var(--serif)}.count small{font-size:9px;letter-spacing:.08em}.scroll{font-size:11px;color:#e7f2f8}
+.hero{min-height:100vh;position:relative;background:linear-gradient(180deg,#03111d48 0%,#03111d35 35%,#03111de8 100%),url("casal.jpg") center/cover;display:grid;place-items:center;text-align:center;color:#fff;padding:30px;overflow:hidden}.hero:before{content:"";position:absolute;inset:7%;border:1px solid #ffffff35;border-radius:28px;pointer-events:none}.hero:after{content:"♡";position:absolute;left:50%;bottom:25px;transform:translateX(-50%);font:28px var(--serif);color:#d8e7f0;opacity:.75}.hero-content{position:relative;z-index:2;padding-top:60px;max-width:900px}.hero .script{text-shadow:0 8px 30px #0008}.hero .quote{max-width:500px;margin:28px auto}.hero .date{display:inline-block;padding:9px 18px;border-top:1px solid #ffffff55;border-bottom:1px solid #ffffff55}.script{font:clamp(72px,12vw,130px) var(--script);line-height:.9}.hero-badge{margin:22px auto 8px;display:flex;align-items:center;justify-content:center;gap:12px}.hero-badge img{width:52px;height:52px;object-fit:cover;border-radius:50%;border:2px solid #fff8;box-shadow:0 5px 18px #0006}.hero-badge span{font-size:9px;line-height:1.2;letter-spacing:.18em;text-transform:uppercase;text-align:left;color:#d8e7f0}.date{font-size:13px;letter-spacing:.2em}.quote{font:22px/1.25 var(--serif)}.count{display:flex;justify-content:center;gap:8px;margin:30px 0}.count div{min-width:75px;border:1px solid #fff5;padding:13px 10px;border-radius:12px;background:#061a2b99;backdrop-filter:blur(8px)}.count b{display:block;font:30px var(--serif)}.count small{font-size:9px;letter-spacing:.08em}.scroll{font-size:11px;color:#e7f2f8}
 /* geral */
 section{padding:100px 6%}.light{background:var(--paper)}.dark{background:var(--navy);color:#fff}.heading{text-align:center;max-width:760px;margin:0 auto 50px}.heading h2{font:56px var(--script);margin:5px 0}.heading p{line-height:1.7;opacity:.8}.blue{color:#0b3150}.section-divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 28px;color:var(--gold)}.section-divider:before,.section-divider:after{content:"";width:65px;height:1px;background:currentColor;opacity:.6}
 /* história */
@@ -40,53 +41,115 @@ section{padding:100px 6%}.light{background:var(--paper)}.dark{background:var(--n
 </style>
 </head>
 <body class="lock">
-<div class="letter-intro" id="letterIntro"><div class="letter-scene"><div class="envelope" id="envelope"><div class="envelope-back"></div><div class="envelope-flap"></div><div class="letter-paper"><div class="letter-decoration">♡</div><p class="eyebrow">Uma mensagem especial</p><h1>Jean & Bianca</h1><p>Preparamos este cantinho com muito carinho para compartilhar com você um dos dias mais importantes das nossas vidas.</p><button class="btn btn-light" id="openSite">Entrar no nosso site <span>→</span></button></div><div class="envelope-front"></div><div class="seal">J <span>&</span> B</div></div><p class="tap-hint">Clique na carta para abrir</p></div></div>
-<header class="hero" id="inicio"><nav class="nav"><a class="brand" href="#inicio">Jean & Bianca ♡</a><button class="menu" id="menu" aria-label="Abrir menu">☰</button><div class="nav-links"><a href="#historia">Nossa história</a><a href="#fotos">Fotos</a><a href="#presentes">Presentes</a><a href="#pix">Pix</a><a href="#local">Local</a><a href="#mensagens">Mensagens</a></div></nav><div class="hero-content"><p class="eyebrow">Com amor, convidamos você para</p><div class="script">Jean & Bianca</div><div class="hero-badge"><img src="fotos/aliancas.jpg" alt="Alianças de Jean e Bianca"><span>Nosso<br>grande dia</span></div><p class="date">14 DE NOVEMBRO DE 2026</p><p class="quote">“Onde quer que você esteja,<br>é onde eu quero estar.”</p><div class="count"><div><b id="d">--</b><small>DIAS</small></div><div><b id="h">--</b><small>HORAS</small></div><div><b id="m">--</b><small>MINUTOS</small></div><div><b id="s">--</b><small>SEGUNDOS</small></div></div><a class="scroll" href="#historia">Role para conhecer nossa história ↓</a></div></header>
-<nav class="mobile-nav" id="mobileNav"><button class="mobile-close" id="mobileClose">×</button><a href="#inicio">Início</a><a href="#historia">Nossa história</a><a href="#fotos">Fotos</a><a href="#presentes">Presentes</a><a href="#pix">Pix</a><a href="#local">Local</a><a href="#mensagens">Mensagens</a></nav>
-<section class="story-section" id="historia"><div class="story-intro"><span class="story-kicker">Nossa história</span><h2>Tudo começou <em>assim...</em></h2><p>Uma história que começou na escola, passou por uma conversa de doido sobre astrologia e chegou até o nosso grande dia.</p></div><div class="story-timeline">
-<article class="story-card story-left"><div class="story-photo"><img src="inicio.jpg" alt="Jean e Bianca no começo da história"></div><div class="story-copy"><span>O começo</span><h3>Onde tudo começou</h3><p>A gente se conheceu na escola, em um campeonato que eu estava participando — e, para melhorar a história, eu ainda ganhei o campeonato. 🏆😂 Depois conversamos um pouco mais e ela foi para a praia. Mesmo de longe, continuamos conversando bastante.</p></div></article>
-<article class="story-card story-right"><div class="story-photo"><img src="bianca.jpg" alt="Bianca"></div><div class="story-copy"><span>Conversas que aproximaram</span><h3>Astrologia e uma conversa de doido</h3><p>Entre uma conversa e outra, começamos a falar sobre astrologia. Foi uma conversa de doido, daquelas que a gente lembra e ri até hoje. 😂✨ Depois eu fui viajar e acabei indo para uma praia um pouco longe da dela.</p></div></article>
-<article class="story-card story-left"><div class="story-photo"><img src="casal.jpg" alt="Jean e Bianca juntos"></div><div class="story-copy"><span>O primeiro encontro</span><h3>O melhor dia da minha vida</h3><p>Quando voltamos para São Paulo, finalmente conseguimos nos encontrar. Nosso primeiro rolê juntos foi no shopping — e, para mim, foi o melhor dia da minha vida. Eu queria fazer daquele dia algo diferente para ela.</p></div></article>
-<article class="story-card story-right"><div class="story-photo"><img src="beijo.jpg" alt="Momento de carinho do casal"></div><div class="story-copy"><span>Uma história para rir</span><h3>Os únicos R$50 do Uber 😂</h3><p>O Uber que me levou para o shopping não tinha troco para R$50. Aqueles eram praticamente os únicos R$50 que eu tinha — então gastei tudo para comprar algumas coisinhas para ela: chocolates, Fini e até um milk-shake de Nutella do Bob's. Eu nunca tinha tomado e ele me deu uma dor de barriga... mas eu não contei para ela naquele dia. KKKKKK.</p></div></article>
-<article class="story-card story-left"><div class="story-photo"><img src="beijo2.jpg" alt="Jean e Bianca em um momento romântico"></div><div class="story-copy"><span>O dia que mudou tudo</span><h3>Conheci os pais dela... e veio o pedido</h3><p>Naquele mesmo dia, conheci os pais dela. E, como se o nosso primeiro encontro já não tivesse sido inesquecível o suficiente, ela me pediu em namoro. Eu aceitei. ❤️ Não esperava que no nosso primeiro encontro a gente já fosse sair de lá com um relacionamento, mas foi simplesmente sensacional.</p></div></article>
-<article class="story-card story-right"><div class="story-photo"><img src="aliancas.jpg" alt="Alianças de Jean e Bianca"></div><div class="story-copy"><span>O nosso próximo capítulo</span><h3>Eu não mudaria nada</h3><p>Eu não mudaria nada daquele dia. Bom... talvez uma coisa: eu que deveria ter pedido ela em namoro. 😂💍 E o resto é história. Agora, essa história continua em 14 de novembro de 2026, quando vamos celebrar o nosso grande dia ao lado de quem amamos.</p></div></article>
-</div><div class="story-closing"><span>♡</span><p>E o resto é história...</p></div></section>
-<section class="gallery-section dark" id="fotos"><div class="heading"><p class="eyebrow">Nossos momentos</p><h2>Galeria de Fotos</h2><p>Alguns momentos passam. Outros ficam para sempre na nossa história.</p></div><div class="gallery"><button data-img="fotos/beijo.jpg"><img src="fotos/beijo.jpg" alt="Jean e Bianca"></button><button data-img="fotos/casal.jpg"><img src="fotos/casal.jpg" alt="Jean e Bianca juntos"></button><button data-img="fotos/inicio.jpg"><img src="fotos/inicio.jpg" alt="Momento do casal"></button><button data-img="fotos/beijo2.jpg"><img src="fotos/beijo2.jpg" alt="Momento romântico"></button><button data-img="fotos/bianca.jpg"><img src="fotos/bianca.jpg" alt="Bianca"></button><button data-img="fotos/aliancas.jpg"><img src="fotos/aliancas.jpg" alt="Alianças"></button><button data-img="fotos/video.jpg"><img src="fotos/video.jpg" alt="Lembrança do casal"></button></div><p class="gallery-note">Cada foto é um capítulo do nosso amor<small>Toque nas fotos para ampliar</small></p></section>
-<section class="gifts light" id="presentes"><div class="heading"><p class="eyebrow blue">Com carinho</p><h2>Presentes</h2><p>Se você quiser nos presentear, deixamos algumas ideias simbólicas. O mais importante é ter você conosco nesse dia.</p></div><div class="gift-grid"><article class="gift"><div class="gift-icon">🍽️</div><h3>Jantar romântico</h3><p>Uma noite especial para comemorar essa nova fase.</p><div class="value">R$ 150</div><button class="btn btn-dark gift-btn" data-gift="Jantar romântico — R$ 150">Presentear</button></article><article class="gift"><div class="gift-icon">🌴</div><h3>Lua de mel</h3><p>Uma contribuição para criarmos novas lembranças juntos.</p><div class="value">R$ 250</div><button class="btn btn-dark gift-btn" data-gift="Lua de mel — R$ 250">Presentear</button></article><article class="gift"><div class="gift-icon">🏠</div><h3>Nosso novo lar</h3><p>Para ajudar a construir nosso cantinho com muito amor.</p><div class="value">R$ 500</div><button class="btn btn-dark gift-btn" data-gift="Nosso novo lar — R$ 500">Presentear</button></article><article class="gift"><div class="gift-icon">✈️</div><h3>Passagens</h3><p>Um pedacinho da nossa próxima aventura.</p><div class="value">R$ 750</div><button class="btn btn-dark gift-btn" data-gift="Passagens — R$ 750">Presentear</button></article><article class="gift"><div class="gift-icon">💙</div><h3>Presente à sua escolha</h3><p>Você escolhe o valor e deixa seu carinho registrado.</p><div class="value">Valor livre</div><button class="btn btn-dark gift-btn" data-gift="Presente à sua escolha">Presentear</button></article><article class="gift"><div class="gift-icon">🎁</div><h3>Um gesto de amor</h3><p>Qualquer contribuição será recebida com muita gratidão.</p><div class="value">Valor livre</div><button class="btn btn-dark gift-btn" data-gift="Um gesto de amor">Presentear</button></article></div></section>
-<section class="pix" id="pix"><div class="heading"><p class="eyebrow">Para quem quiser contribuir</p><h2>Pix</h2><p>Para quem quiser nos presentear, nossa chave Pix é o e-mail abaixo. 💙</p></div><div class="pix-wrap"><div class="pix-card"><div class="fake-qr" aria-label="QR Code demonstrativo"></div><p style="text-align:center;margin:0;color:#dcecf7">Use a chave Pix abaixo no app do seu banco</p><div class="pix-key" id="pixKey">jeanjeffiore@gmail.com</div><div class="copy-row"><input id="pixInput" value="jeanjeffiore@gmail.com" aria-label="Chave Pix"><button class="btn btn-blue" id="copyPix">Copiar</button></div><div class="status" id="pixStatus"></div></div><div class="pix-info"><h3 style="font:36px var(--serif);margin-top:0">Nosso Pix</h3><p style="line-height:1.8;color:#c2d2dc">Se você quiser nos presentear, pode usar nossa chave Pix: <strong style="color:#fff">jeanjeffiore@gmail.com</strong>.</p><p class="pix-note">Confira o destinatário no seu banco antes de confirmar a transferência.</p><a class="btn btn-outline" href="#mensagens">Continuar pelo site ↓</a></div></div></section>
-<section class="local" id="local"><div class="heading"><p class="eyebrow blue">O grande dia</p><h2>Esperamos você</h2><p>Queremos você ao nosso lado para celebrar esse momento.</p></div><div class="local-grid"><div class="local-card"><p class="eyebrow blue">Data</p><h3>14 de novembro de 2026</h3><p>Sábado • Nosso casamento</p><p class="address">📍 Avenida Aparecida do Rio Negro, 446</p><a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Avenida+Aparecida+do+Rio+Negro+446">Como chegar ↗</a></div><div class="local-card"><p class="eyebrow blue">Localização</p><h3>Até o nosso grande dia</h3><p>Salve o endereço para facilitar sua chegada. Quando vocês tiverem o nome do espaço e outros detalhes, essa área pode receber essas informações também.</p><div class="map-frame"><div><div class="map-pin">⌖</div><strong>Avenida Aparecida do Rio Negro, 446</strong><br><span>Abra o mapa pelo botão ao lado</span></div></div></div></div></section>
-<section class="messages" id="mensagens"><div class="heading"><p class="eyebrow blue">Deixe um carinho</p><h2>Mensagem dos convidados</h2><p>Sua mensagem vai fazer parte das nossas lembranças e poderá ser vista por todos os convidados. 💙</p></div><div class="message-wrap"><form class="message-form" id="messageForm"><div class="fields"><div class="field"><label for="guestName">Seu nome</label><input id="guestName" required placeholder="Ex.: Maria Silva"></div><div class="field"><label for="guestDate">Data</label><input id="guestDate" type="date"></div><div class="field full"><label for="guestMessage">Sua mensagem</label><textarea id="guestMessage" required placeholder="Escreva aqui sua mensagem..."></textarea></div></div><button class="btn btn-dark" type="submit">Enviar mensagem ♥</button></form><div class="message-list" id="messageList"><article class="message-item"><strong>Mensagens dos convidados</strong><small> • aparecerão aqui para todos.</small><p>As mensagens são compartilhadas entre os convidados quando o mural online estiver conectado ao banco de dados do site.</p></article></div></div></section>
-<footer class="footer"><div class="footer-script">Jean & Bianca</div><p class="footer-date">14 · 11 · 2026</p><p>Que bom ter você fazendo parte da nossa história. ♡</p><p style="font-size:10px;opacity:.55;margin-top:35px">Feito com amor para o nosso grande dia.</p></footer>
-<div class="lightbox" id="lightbox"><button id="lightboxClose" aria-label="Fechar">×</button><img id="lightboxImg" src="" alt="Foto ampliada"></div><div class="toast" id="toast"></div>
-<script>
-const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
-const intro=$('#letterIntro'),env=$('#envelope');
-function openLetter(e){if(e)e.stopPropagation();env.classList.add('open');setTimeout(()=>{intro.classList.add('hidden');document.body.classList.remove('lock')},1500)}
-env.addEventListener('click',openLetter);$('#openSite').addEventListener('click',openLetter);
-const target=new Date('2026-11-14T00:00:00-03:00');
-function tick(){let x=Math.max(0,target-new Date());$('#d').textContent=Math.floor(x/864e5);$('#h').textContent=String(Math.floor(x/36e5)%24).padStart(2,'0');$('#m').textContent=String(Math.floor(x/6e4)%60).padStart(2,'0');$('#s').textContent=String(Math.floor(x/1e3)%60).padStart(2,'0')}tick();setInterval(tick,1000);
-const mobileNav=$('#mobileNav');$('#menu').onclick=()=>mobileNav.classList.add('open');$('#mobileClose').onclick=()=>mobileNav.classList.remove('open');$$('.mobile-nav a').forEach(a=>a.onclick=()=>mobileNav.classList.remove('open'));
-const lightbox=$('#lightbox'),lbImg=$('#lightboxImg');$$('.gallery button').forEach(b=>b.onclick=()=>{lbImg.src=b.dataset.img;lightbox.classList.add('open')});$('#lightboxClose').onclick=()=>lightbox.classList.remove('open');lightbox.onclick=e=>{if(e.target===lightbox)lightbox.classList.remove('open')};
-function toast(t){const el=$('#toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2200)}
-$('#copyPix').onclick=async()=>{try{await navigator.clipboard.writeText($('#pixInput').value);$('#pixStatus').textContent='✓ Chave copiada.';toast('Chave Pix copiada')}catch(e){$('#pixStatus').textContent='Selecione e copie a chave manualmente.'}};
-$$('.gift-btn').forEach(b=>b.onclick=()=>{toast('Esta opção ficará pronta quando a chave Pix oficial for configurada.');location.hash='pix'});
-const form=$('#messageForm'),list=$('#messageList');
-// Para que o mural seja realmente compartilhado entre todos, preencha SUPABASE_URL e SUPABASE_ANON_KEY no arquivo abaixo.
-const SUPABASE_URL='COLE_AQUI_A_URL_DO_SEU_PROJETO';
-const SUPABASE_ANON_KEY='COLE_AQUI_A_CHAVE_ANON_DO_SEU_PROJETO';
-let supabaseClient=null;
-function escapeHtml(s){return String(s).replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]))}
-function renderMessages(items){list.innerHTML='';if(!items.length){list.innerHTML='<article class=\"message-item\"><strong>Seja o primeiro a deixar uma mensagem! 💙</strong><p>Escreva seu carinho para Jean & Bianca.</p></article>';return}items.slice(0,12).forEach(x=>{const el=document.createElement('article');el.className='message-item';el.innerHTML='<strong>'+escapeHtml(x.name)+'</strong><small> • '+escapeHtml(x.guest_date||x.date||'')+'</small><p>'+escapeHtml(x.message)+'</p>';list.appendChild(el)})}
-function loadLocalMessages(){const items=JSON.parse(localStorage.getItem('jbMessages')||'[]');renderMessages(items.reverse())}
-async function initSharedMessages(){
-  if(SUPABASE_URL.startsWith('http') && !SUPABASE_URL.includes('COLE_AQUI')){
-    const script=document.createElement('script');script.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';document.head.appendChild(script);
-    script.onload=async()=>{supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);await loadSharedMessages();};
-  } else {loadLocalMessages();}
-}
-async function loadSharedMessages(){const {data,error}=await supabaseClient.from('guest_messages').select('name,message,guest_date,created_at').order('created_at',{ascending:false}).limit(12);if(!error)renderMessages(data||[]);}
-form.addEventListener('submit',async e=>{e.preventDefault();const item={name:$('#guestName').value.trim(),guest_date:$('#guestDate').value,message:$('#guestMessage').value.trim()};if(supabaseClient){const {error}=await supabaseClient.from('guest_messages').insert(item);if(error){toast('Não foi possível enviar agora.');return}form.reset();await loadSharedMessages();toast('Mensagem enviada para todos! 💙');}else{const items=JSON.parse(localStorage.getItem('jbMessages')||'[]');items.unshift(item);localStorage.setItem('jbMessages',JSON.stringify(items));form.reset();renderMessages(items);toast('Mensagem salva localmente.');}});
-initSharedMessages();
-</script>
-</body>
-</html>
+<div class="letter-intro" id="letterIntro">
+  <div class="letter-scene">
+    <div class="envelope" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="envelope-flap"></div>
+      <div class="letter-paper">
+        <div class="letter-decoration">♡</div>
+        <p class="eyebrow">Uma mensagem especial</p>
+        <h1>Jean & Bianca</h1>
+        <p>É com muito amor no coração que convidamos você para o dia mais especial de nossas vidas.</p>
+        <button class="btn btn-light" id="openSite">Entrar no nosso site <span>→</span></button>
+      </div>
+      <div class="envelope-front"></div>
+      <div class="seal">J <span>&</span> B</div>
+    </div>
+    <p class="tap-hint">Clique na carta para abrir</p>
+  </div>
+</div>
+
+<header class="hero" id="inicio">
+  <nav class="nav">
+    <a class="brand" href="#inicio">Jean & Bianca ♡</a>
+    <button class="menu" id="menu" aria-label="Abrir menu">☰</button>
+    <div class="nav-links">
+      <a href="#historia">Nossa história</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#presentes">Presentes</a>
+      <a href="#pix">Pix</a>
+      <a href="#local">Local</a>
+      <a href="#mensagens">Mensagens</a>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <p class="eyebrow">Com amor, convidamos você para</p>
+    <div class="script">Jean & Bianca</div>
+    <div class="hero-badge">
+      <img src="aliancas.jpg" alt="Alianças de Jean e Bianca">
+      <span>Nosso<br>grande dia</span>
+    </div>
+    <p class="date">14 DE NOVEMBRO DE 2026</p>
+    <p class="quote">“É com muito amor no coração que convidamos você para o dia mais especial de nossas vidas.”</p>
+    <div class="count">
+      <div><b id="d">--</b><small>DIAS</small></div>
+      <div><b id="h">--</b><small>HORAS</small></div>
+      <div><b id="m">--</b><small>MINUTOS</small></div>
+      <div><b id="s">--</b><small>SEGUNDOS</small></div>
+    </div>
+    <a class="scroll" href="#historia">Role para conhecer nossa história ↓</a>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">×</button>
+  <a href="#inicio">Início</a>
+  <a href="#historia">Nossa história</a>
+  <a href="#fotos">Fotos</a>
+  <a href="#presentes">Presentes</a>
+  <a href="#pix">Pix</a>
+  <a href="#local">Local</a>
+  <a href="#mensagens">Mensagens</a>
+</nav>
+
+<section class="story-section" id="historia">
+  <div class="story-intro">
+    <span class="story-kicker">Nossa história</span>
+    <h2>Tudo começou <em>assim...</em></h2>
+    <p>Uma história que começou na escola, passou por uma conversa de doido sobre astrologia e chegou até o nosso grande dia.</p>
+  </div>
+  <div class="story-timeline">
+
+<article class="story-card story-left">
+  <div class="story-photo"><img src="inicio.jpg" alt="Jean e Bianca no começo da história"></div>
+  <div class="story-copy">
+    <span>O começo</span>
+    <h3>Onde tudo começou</h3>
+    <p>A gente se conheceu na escola, em um campeonato que eu estava participando — e, para melhorar a história, eu ainda ganhei o campeonato. 🏆😂 Depois conversamos um pouco mais e ela foi para a praia. Mesmo de longe, continuamos conversando bastante.</p>
+  </div>
+</article>
+
+<article class="story-card story-right">
+  <div class="story-photo"><img src="bianca.jpg" alt="Bianca"></div>
+  <div class="story-copy">
+    <span>Conversas que aproximaram</span>
+    <h3>Astrologia e uma conversa de doido</h3>
+    <p>Entre uma conversa e outra, começamos a falar sobre astrologia. Foi uma conversa de doido, daquelas que a gente lembra e ri até hoje. 😂✨ Depois eu fui viajar e acabei indo para uma praia um pouco longe da dela.</p>
+  </div>
+</article>
+
+<article class="story-card story-left">
+  <div class="story-photo"><img src="casal.jpg" alt="Jean e Bianca juntos"></div>
+  <div class="story-copy">
+    <span>O primeiro encontro</span>
+    <h3>O melhor dia da minha vida</h3>
+    <p>Quando voltamos para São Paulo, finalmente conseguimos nos encontrar. Nosso primeiro rolê juntos foi no shopping — e, para mim, foi o melhor dia da minha vida. Eu queria fazer daquele dia algo diferente para ela.</p>
+  </div>
+</article>
+
+<article class="story-card story-right">
+  <div class="story-photo"><img src="beijo.jpg" alt="Momento de carinho do casal"></div>
+  <div class="story-copy">
+    <span>Uma história para rir</span>
+    <h3>Os únicos R$50 do Uber 😂</h3>
+    <p>O Uber que me levou para o shopping não tinha troco para R$50. Aqueles eram praticamente os únicos R$50 que eu tinha — então gastei tudo para comprar algumas coisinhas para ela: chocolates, Fini e até um milk-shake de Nutella do Bob's. Eu nunca tinha tomado e ele me deu uma dor de barriga... mas eu não contei para ela naquele dia. KKKKKK.</p>
+  </div>
+</article>
+
+<article class="story-card story-left">
+  <div class="story-photo"><img src="beijo2.jpg" alt="Jean e Bianca em um momento romântico"></div>
+  <div class="story-copy">
+    <span>O dia que mudou tudo</span>
+    <h3>Conheci os pais dela... e veio o pedido</h3>
+    <p>Naquele mesmo dia, conheci os pais dela. E, como se o nosso primeiro encontro já não 
