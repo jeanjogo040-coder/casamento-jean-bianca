@@ -1,26 +1,10 @@
-JEAN & BIANCA — SITE COMPLETO
+Jean & Bianca — versão com carta azul de abertura
 
-Data: 14/11/2026
-Endereço: Avenida Aparecida do Rio Negro, 446
+A abertura usa o mesmo conceito aprovado: fundo azul escuro, envelope azul, aba animada, papel creme, selo J&B e botão para entrar no site.
 
-CONTEÚDO
-- Carta de abertura
-- Capa com contagem regressiva
-- Nossa História com a história real do casal
-- Galeria com 7 fotos reais e visualização ampliada
-- Lista de presentes simbólica
-- Área Pix (PLACEHOLDER: trocar a chave antes de publicar)
-- Localização com botão para o Google Maps
-- Mensagens dos convidados (salvas apenas no navegador nesta versão)
-- Rodapé
-- Menu mobile responsivo
+Fotos reais estão na pasta fotos/.
+Endereço: Avenida Aparecida do Rio Negro, 446.
+Data: 14 de novembro de 2026.
 
-COMO USAR
-1. Extraia o ZIP.
-2. Abra index.html no navegador para testar.
-3. Para publicar no GitHub Pages, envie index.html e a pasta fotos/ para o repositório.
 
-ANTES DE PUBLICAR
-- Troque SUA-CHAVE-PIX-AQUI pela chave Pix real.
-- Se quiser, informe o nome oficial do espaço/venue, cidade/UF e horário para eu inserir.
-- A seção de mensagens atualmente usa localStorage e não compartilha mensagens entre dispositivos. Para isso é preciso conectar um backend/serviço.
+Atualização: seção “Nossa História” refeita com a história completa contada por Jean, mantendo as fotos reais e o visual azul.
